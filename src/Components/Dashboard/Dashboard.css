@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    .sidebar{
+      position: fixed;
+      z-index: 1;
+    }
+  }
+
+  .dashboard{
+      margin-left: 250px;
+  }
+
+  @media screen and (max-width: 400px) {
+    .dashboard {
+      margin-left: 0px;
+    }
+  }
+.button{
+    color: white;
+    border: none;
+    margin: 80px 40px ;
+    padding: 20px;
+    border-radius: 45px;
+    background: #1E1E1E;
+    box-shadow:  16px 16px 30px #a6a6a6,
+             -16px -16px 30px #ffffff;
+    transition: 1s;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.form{
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+}
+.form input{
+  padding: 10px;
+  margin: 10px 0px;
+  width: 100%;
+}
+.form textarea{
+  padding: 10px;
+  margin: 10px 0px;
+  width: 100%;
+}
+.note-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 380px);
+  margin-top: 25px;
+}
+@media screen and (max-width: 400px) {
+  .note-list {
+    margin-top:260px;
+  }
+}
+.single-note{
+  width: 300px;
+  height: 210px;
+  margin: 10px;
+  padding: 15px;
+  background: rgba( 175, 127, 127, 0.30 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.del-btn{
+  border: none;
+  background:none;
+  cursor: pointer;
+}
+.update-btn{
+  float: right;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  background-color: #1E1E1E;
+}
+.update-area{
+  margin:17px;
+}
+
+@media screen and (max-width: 400px) {
+  .update-area {
+    margin: -40px 0px 10px 20px;
+  }
+}
+.update-button{
+  margin-left:20px;
+}
+
